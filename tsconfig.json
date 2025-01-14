@@ -1,0 +1,40 @@
+{
+  "display": "Configuration for Lissajous Curves",
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "commonjs",
+    "allowJs": true,
+    "rootDir": "./",
+    "outDir": "./dist",
+    "declaration": true,
+    "alwaysStrict": true,                     /* Parse in strict mode and emit "use strict" for each source file */
+    "strict": true,                           /* Enable all strict type-checking options */
+    "lib": ["ESNext", "dom"],                 /* Allows you to use the newest syntax, and have access to console.log */
+    "noImplicitAny": true,                    /* will issue an error whenever it would have inferred any:*/ 
+    "noFallthroughCasesInSwitch": true,       /* Report errors for fallthrough cases in switch statement */
+    "noImplicitReturns": true,                /* Report error when not all code paths in function return a value */
+    "noUnusedLocals": true,                   /* Report errors on unused local variables */
+    "forceConsistentCasingInFileNames": true  /* Force all file names to have the same case style */
+  },
+  "include": ["src/home-work/**/*"],
+  "exclude": [
+        "node_modules",
+        "build",
+        "lib",
+        "test",
+        "public"
+  ],
+  "typedocOptions": {
+    "entryPoints": [
+      "./src/home-work/check-box/check-box.ts",
+      "./src/home-work/html-input-element/html-input-element.ts",
+      "./src/home-work/lissajous-curves/lissajous-curves.ts",
+      "./src/home-work/grid/grid.ts",
+      "./src/home-work/menu/menu.ts",
+      "./src/home-work/slider/slider.ts",
+      "./src/home-work/view/view.ts",
+      "./src/home-work/view/lissajous-client.ts"
+    ],
+    "out": "docs"
+  }
+}

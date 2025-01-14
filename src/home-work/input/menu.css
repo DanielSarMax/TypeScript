@@ -1,0 +1,13 @@
+/**
+* The input buttons of type number have a default width of 100px.
+* The input buttons of type checkbox have a default value of true.
+*/
+
+input[type="number"] {
+  width: 120px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
